@@ -1,0 +1,19 @@
+{
+  "name": "task2_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vl-mobitutor/Netology_Node_Task2_2.git"
+  },
+  "author": "Vyacheslav L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vl-mobitutor/Netology_Node_Task2_2/issues"
+  },
+  "homepage": "https://github.com/vl-mobitutor/Netology_Node_Task2_2#readme"
+}

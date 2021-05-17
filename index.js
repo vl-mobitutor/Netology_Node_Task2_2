@@ -4,7 +4,8 @@ const input = readline.createInterface(process.stdin);
 
 
 let myFigure = 5;
-console.log(`Начинаем игру - введите число в диапазоне от `);
+console.log('Игра "Угадай число":');
+console.log(`Введите число в диапазоне от ${myFigure - 5} до ${myFigure + 5}`);
 
 input.on('line', (data) => predictNumber(data));
 
@@ -15,7 +16,12 @@ function predictNumber(data) {
     console.log("Введите цифру, или нажите 'Ctrl + C' для выхода из игры");
 
   } else {
-    console.log("Число!");
+    if (userFigure > myFigure) console.log("Меньше");
+    if (userFigure < myFigure) console.log("Больше");
+    if (userFigure == myFigure) {
+      console.log("Поздравляем! Отгадано число: " + myFigure);
+      process.exit(0);
+    }
   }
 
 }
